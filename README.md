@@ -1,8 +1,5 @@
 NHẬP MÔN CÔNG NGHỆ PHẦN MỀM
 Lab 02 – Phân tích yêu cầu & Thiết kế Use Case (Hotel Booking System)
- Mục tiêu
-Sinh viên học cách mô tả yêu cầu và thiết kế hệ thống đặt phòng khách sạn bằng UML,
-thiết kế cơ sở dữ liệu, và triển khai quy trình Agile-Scrum trên Jira, đồng bộ với GitHub.
 
 1. Thiết kế Mini Project: Hệ thống quản lý đặt phòng khách sạn
 1.1 Entity (6 bảng dữ liệu chính)
