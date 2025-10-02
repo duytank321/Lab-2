@@ -1,88 +1,23 @@
-NHẬP MÔN CÔNG NGHỆ PHẦN MỀM
-Lab 02 – Phân tích yêu cầu & Thiết kế Use Case (Hotel Booking System)
+Dự án Lab02 - Nhập môn Công nghệ phần mềm.
+Mục tiêu: Xây dựng và mô tả hệ thống quản lý khách sạn bằng cách áp dụng các công cụ:
 
-1. Thiết kế Mini Project: Hệ thống quản lý đặt phòng khách sạn
-1.1 Entity (6 bảng dữ liệu chính)
-• Guest (Khách hàng)
-• RoomType (Loại phòng)
-• Room (Phòng cụ thể)
-• Reservation (Đặt phòng)
-• Payment (Thanh toán)
-• Staff (Nhân viên/Lễ tân/Quản lý)
+UML (Use Case Diagram, Sequence Diagram)
+ERD (Entity Relationship Diagram)
+Jira (Quản lý backlog, sprint, board theo Scrum)
+GitHub (Lưu trữ artefact và đồng bộ với Jira)
 
- Mối quan hệ:
-• Guest 1–N Reservation
-• Reservation 1–N Payment
-• RoomType 1–N Room
-• Room 1–N Reservation
-• Staff 1–N Reservation (lễ tân quản lý)
+1. Use Case Diagram
+Sơ đồ tổng quát thể hiện tất cả tác nhân (Guest, Receptionist, Manager, Housekeeping, Payment Gateway) và các chức năng chính.
 
-1.2 Use Case UML
-Các tác nhân chính:
-• Guest (Khách hàng)
-• Receptionist (Lễ tân)
-• Manager (Quản lý)
-• Payment Gateway
-• Housekeeping (Buồng phòng)
+2. Sequence Diagram
+Online Booking & Payment
+Check-in/Check-out
 
- Use Case chính:
-• Tìm phòng, Xem chi tiết phòng
-• Đặt phòng online (Booking)
-• Thanh toán online
-• Check-in / Check-out
-• Quản lý phòng & giá
-• Quản lý đặt phòng (cho lễ tân)
-• Công việc buồng phòng
-• Báo cáo doanh thu
-(Biểu đồ UML Use Case vẽ bằng PlantUML / draw.io – sinh viên tự vẽ và upload lên
-GitHub)
+3. ERD (Entity Relationship Diagram)
+Sơ đồ dữ liệu tổng quát: Guest, Reservation, Payment, Room, Staff, RoomType.
 
-1.3 Sequence UML
-a) Luồng Đặt phòng online
-1. Guest chọn phòng → hệ thống giữ phòng (hold).
-2. Guest nhập thông tin → thực hiện thanh toán.
-3. Cổng thanh toán trả kết quả → xác nhận & gửi email.
-b) Luồng Check-in/Check-out (Lễ tân)
-1. Receptionist tra cứu mã đặt phòng.
-2. Check-in: gán phòng thực tế, cập nhật trạng thái.
-3. Check-out: tổng hợp chi phí, thu tiền, cập nhật buồng phòng.
-(Vẽ 2 Sequence Diagram bằng PlantUML hoặc draw.io)
-
-1.4 Thiết kế cơ sở dữ liệu (ERD)
-• Guest(GuestID, Name, Phone, Email, Address)
-• RoomType(TypeID, Name, Price, Capacity, Description)
-• Room(RoomID, TypeID, Status, Floor)
-• Reservation(ResvID, GuestID, RoomID, StaffID, CheckInDate, CheckOutDate,
-Status)
-• Payment(PaymentID, ResvID, Amount, Method, Status, Date)
-• Staff(StaffID, Name, Role, Username, PasswordHash)
- ERD thể hiện các quan hệ 1-N, PK, FK rõ ràng.
- 
-2. Triển khai chi tiết trên Jira (Agile Scrum)
-• Product Backlog (ví dụ):
-o Đăng ký/Đăng nhập khách hàng
-o Tìm phòng & Xem chi tiết phòng
-o Đặt phòng & thanh toán online
-o Check-in/Check-out (Lễ tân)
-o Quản lý phòng & giá (Manager)
-o Báo cáo doanh thu
-o Công việc buồng phòng
-• Sprint Plan:
-o Sprint 1: Auth, Tìm phòng, Xem chi tiết phòng
-o Sprint 2: Đặt phòng & giữ chỗ
-o Sprint 3: Thanh toán & Check-in/out
-o Sprint 4: Báo cáo, housekeeping, tối ưu & release
-• Board:
-o To Do → In Progress → Code Review → Testing → Done
- Mỗi user story mô tả theo format:
-As a [role], I want [function], so that [benefit].
-
-4. Đồng bộ GitHub
-• Mỗi sinh viên tạo repo riêng (public).
-• Upload các artefact:
-o Use Case Diagram (.png/.drawio)
-o Sequence Diagram
-o ERD
-o README.md mô tả dự án
-• Đồng bộ Jira ↔ GitHub (có thể dùng Smart Commit để gắn issue key vào commit).
-• Mỗi commit: #JIRA-123 Add: Booking use case diagram
+Công cụ sử dụng
+Jira: Quản lý Product Backlog, Sprint Planning, Board.
+MySQL Workbench: Thiết kế và reverse engineer ERD.
+PlantUML / Draw.io: Vẽ sơ đồ UML.
+GitHub: Lưu trữ và quản lý version của các artefact.
