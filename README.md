@@ -3,6 +3,7 @@ Lab 02 – Phân tích yêu cầu & Thiết kế Use Case (Hotel Booking System)
  Mục tiêu
 Sinh viên học cách mô tả yêu cầu và thiết kế hệ thống đặt phòng khách sạn bằng UML,
 thiết kế cơ sở dữ liệu, và triển khai quy trình Agile-Scrum trên Jira, đồng bộ với GitHub.
+
 1. Thiết kế Mini Project: Hệ thống quản lý đặt phòng khách sạn
 1.1 Entity (6 bảng dữ liệu chính)
 • Guest (Khách hàng)
@@ -11,6 +12,7 @@ thiết kế cơ sở dữ liệu, và triển khai quy trình Agile-Scrum trên
 • Reservation (Đặt phòng)
 • Payment (Thanh toán)
 • Staff (Nhân viên/Lễ tân/Quản lý)
+
  Mối quan hệ:
 • Guest 1–N Reservation
 • Reservation 1–N Payment
@@ -25,6 +27,7 @@ Các tác nhân chính:
 • Manager (Quản lý)
 • Payment Gateway
 • Housekeeping (Buồng phòng)
+
  Use Case chính:
 • Tìm phòng, Xem chi tiết phòng
 • Đặt phòng online (Booking)
