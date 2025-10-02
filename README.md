@@ -17,6 +17,7 @@ thiết kế cơ sở dữ liệu, và triển khai quy trình Agile-Scrum trên
 • RoomType 1–N Room
 • Room 1–N Reservation
 • Staff 1–N Reservation (lễ tân quản lý)
+
 1.2 Use Case UML
 Các tác nhân chính:
 • Guest (Khách hàng)
@@ -35,6 +36,7 @@ Các tác nhân chính:
 • Báo cáo doanh thu
 (Biểu đồ UML Use Case vẽ bằng PlantUML / draw.io – sinh viên tự vẽ và upload lên
 GitHub)
+
 1.3 Sequence UML
 a) Luồng Đặt phòng online
 1. Guest chọn phòng → hệ thống giữ phòng (hold).
@@ -45,6 +47,7 @@ b) Luồng Check-in/Check-out (Lễ tân)
 2. Check-in: gán phòng thực tế, cập nhật trạng thái.
 3. Check-out: tổng hợp chi phí, thu tiền, cập nhật buồng phòng.
 (Vẽ 2 Sequence Diagram bằng PlantUML hoặc draw.io)
+
 1.4 Thiết kế cơ sở dữ liệu (ERD)
 • Guest(GuestID, Name, Phone, Email, Address)
 • RoomType(TypeID, Name, Price, Capacity, Description)
@@ -54,6 +57,7 @@ Status)
 • Payment(PaymentID, ResvID, Amount, Method, Status, Date)
 • Staff(StaffID, Name, Role, Username, PasswordHash)
  ERD thể hiện các quan hệ 1-N, PK, FK rõ ràng.
+ 
 2. Triển khai chi tiết trên Jira (Agile Scrum)
 • Product Backlog (ví dụ):
 o Đăng ký/Đăng nhập khách hàng
@@ -72,7 +76,8 @@ o Sprint 4: Báo cáo, housekeeping, tối ưu & release
 o To Do → In Progress → Code Review → Testing → Done
  Mỗi user story mô tả theo format:
 As a [role], I want [function], so that [benefit].
-3. Đồng bộ GitHub
+
+4. Đồng bộ GitHub
 • Mỗi sinh viên tạo repo riêng (public).
 • Upload các artefact:
 o Use Case Diagram (.png/.drawio)
