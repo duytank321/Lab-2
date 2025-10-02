@@ -1,3 +1,6 @@
+Họ và tên: Nguyễn Duy Tân
+MSSV: N23DCPT046
+LỚP: Thiết kế đa phương tiện
 Dự án Lab02 - Nhập môn Công nghệ phần mềm.
 Mục tiêu: Xây dựng và mô tả hệ thống quản lý khách sạn bằng cách áp dụng các công cụ:
 
@@ -17,7 +20,7 @@ Check-in/Check-out
 Sơ đồ dữ liệu tổng quát: Guest, Reservation, Payment, Room, Staff, RoomType.
 
 Công cụ sử dụng
-Jira: Quản lý Product Backlog, Sprint Planning, Board.
-MySQL Workbench: Thiết kế và reverse engineer ERD.
-PlantUML / Draw.io: Vẽ sơ đồ UML.
-GitHub: Lưu trữ và quản lý version của các artefact.
+Jira
+MySQL Workbench
+PlantUML / Draw.io/ online Visual Paradigm
+GitHub
